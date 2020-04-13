@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+   <persistence-unit name="db_desafio_mirante">
+
+        <jta-data-source>java:jboss/datasources/Desafio_MiranteDS</jta-data-source>
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="update" />
+            
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+        </properties>
+
+    </persistence-unit>
+</persistence>
